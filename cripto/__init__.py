@@ -1,1 +1,1 @@
-name = "PyCripto"
+name = "cripto"
