@@ -1,8 +1,8 @@
 import setuptools
 
 setuptools.setup(
-    name="python_world",
-    version="0.0.1",
+    name="Pycripto",
+    version="1.0.0",
     author="Rafael Perazzo",
     packages=setuptools.find_packages(),
     install_requires=['argon2-cffi', 'pycryptodome','python-gnupg'],
