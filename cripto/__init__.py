@@ -149,7 +149,8 @@ def aes_gcm_decrypt(key, ciphertext):
     '''
     Decrypts the ciphertext using AES GCM decryption.
     :param key: AES key (must be 16, 24, or 32 bytes long) - bytes or hexadecimal string
-    :param ciphertext: ciphertext to be decrypted (nonce + ciphertext + tag) - bytes or base64 string
+    :param ciphertext: ciphertext to be decrypted (nonce + ciphertext + tag) 
+                    - bytes or base64 string
     :return: decrypted plaintext - string
     '''
     if isinstance(key, str):
@@ -201,8 +202,7 @@ def verify_hmac(key, message, signature):
     # Compare the calculated signature with the provided signature
     if signature_calculated == signature:
         return True
-    else:
-        return False
+    return False
 
 def hash_argon2id(key, password):
     '''
@@ -219,7 +219,6 @@ def hash_argon2id(key, password):
     h.update(password.encode())
     # Convert to hexadecimal
     signature = h.hexdigest()
-    
     # Apply Argon2 hashing
     ph = PasswordHasher()
     hash_argon = ph.hash(signature)
@@ -241,7 +240,6 @@ def verify_hash(hash_argon, key, password):
     h.update(password.encode())
     # Convert to hexadecimal
     signature = h.hexdigest()
-    
     # Apply Argon2 hashing
     ph = PasswordHasher()
     try:
