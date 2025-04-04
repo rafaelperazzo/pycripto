@@ -1,3 +1,6 @@
+'''
+Referência: https://github.com/ceddlyburge/python_world/blob/master/README.md
+'''
 import setuptools
 
 setuptools.setup(
