@@ -4,7 +4,7 @@ Referência: https://github.com/ceddlyburge/python_world/blob/master/README.md
 import setuptools
 
 setuptools.setup(
-    name="Pycripto",
+    name="cripto",
     version="1.0.0",
     author="Rafael Perazzo",
     packages=setuptools.find_packages(),
